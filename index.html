@@ -135,32 +135,7 @@
     <canvas id="textCanvas"></canvas>
     <!-- 版权信息 -->
     <div id="copyright">Copyright © 2024 xiaomeng. All rights reserved.</div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const music = document.getElementById('music');
-            const playButton = document.getElementById('playMusicButton');
-
-            function loadAndPlayMusic() {
-                music.addEventListener('loadedmetadata', function () {
-                    music.play().catch(function () {
-                        playButton.style.display = 'block';
-                    });
-                });
-                music.src ='music.mp3';
-            }
-
-            if ('autoplay' in document.createElement('audio')) {
-                loadAndPlayMusic();
-            } else {
-                playButton.style.display = 'block';
-            }
-
-            playButton.addEventListener('click', function () {
-                loadAndPlayMusic();
-                playButton.style.display = 'none';
-            });
-        });
-    </script>
+  
     <script src="jquery.min.js"></script>
     <script src="fire.js"></script>
     <script src="talk.js"></script>
