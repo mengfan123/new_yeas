@@ -10,14 +10,11 @@ var bigbooms = [];
 //     initAnimate();
 // };
 
-//document.getElementById("iframMusic").onload = function(){
-//    var music = document.getElementById("music");
-//    music.src = 'music.mp3';
-//    music.oncanplay = function(){
-//        music.play();
-//    };
-//};
-
+var music = document.getElementById("music");
+   music.src = 'music.mp3';
+   music.oncanplay = function(){
+       music.play();
+   };
 function initAnimate() {
     drawBg();
     lastTime = new Date();
